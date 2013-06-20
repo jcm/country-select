@@ -7,7 +7,7 @@ module CountrySelect
       desc "Copies the i18n files to locales."
       def copy_i18n
         Dir.glob("#{TEMPLATE_DIR}/*.yml") do |file|
-          template file, "config/locales/#{file}"
+          template file, "config/locales/#{File.basename(file)}"
         end
       end
     end

@@ -11,4 +11,5 @@ Gem::Specification.new do |s|
 											'MIT-LICENSE',
                       'country-select.gemspec']
 	s.homepage			= 'http://github.com/ninkibah/country-select'
+  s.require_paths = ["lib"]
 end
