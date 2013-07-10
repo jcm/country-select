@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'generators/country-select/install_generator'
+# require 'generators/country-select/install_generator'
 
 describe CountrySelect::Generators::InstallGenerator do
   include GeneratorSpec::TestCase
@@ -12,5 +12,6 @@ describe CountrySelect::Generators::InstallGenerator do
 
   it "copies i18n file" do
     assert_file "config/locales/countries.en.yml"
+    assert_file "config/locales/countries.pt-BR.yml"
   end
 end
