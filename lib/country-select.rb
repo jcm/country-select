@@ -1,3 +1,5 @@
+require 'sort_alphabetical'
+
 # CountrySelect
 module ActionView
   module Helpers
