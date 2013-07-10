@@ -31,7 +31,7 @@ module ActionView
 
         country_options = country_options.html_safe if country_options.respond_to?(:html_safe)
 
-        return country_options + options_for_select(translated_countries(COUNTRIES).zip(COUNTRIES.values), selected)
+        return country_options + options_for_select(translated_countries(COUNTRIES).zip(COUNTRIES.values).sort, selected)
       end
 
       def translated_countries(countries)
