@@ -1,5 +1,4 @@
 require 'spec_helper'
-# require 'generators/country-select/install_generator'
 
 describe CountrySelect::Generators::InstallGenerator do
   include GeneratorSpec::TestCase
