@@ -33,6 +33,13 @@ Or put the following in your Gemfile
 
     gem 'country-select'
 
+After installing the `gem`, you can run the generator to create the i18n files:
+
+    rails g country_select:install
+
+This will create, for now, the files `countries.en.yml` and `countries.pt-BR.yml`
+in your `locales` folder.
+
 ## Example
 
 Simple use supplying model and attribute as parameters:
@@ -41,7 +48,11 @@ Simple use supplying model and attribute as parameters:
 
 Supplying priority countries to be placed at the top of the list:
 
-    country_select("user", "country_name", [ "United Kingdom", "France", "Germany" ])
+    country_select("user", "country_name", [ "BRA", "URY", "PRY" ])
+
+Defining the currently selected country:
+
+    country_select("user", "country_name", [ "BRA", "URY", "PRY" ], selected: 'BRA')
 
 ## Version History
 
