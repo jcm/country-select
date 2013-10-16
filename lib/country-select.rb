@@ -22,7 +22,7 @@ module ActionView
           options[:disabled] = disabled
         end
 
-        Tags::Select.new(object, method, self, SortAlphabetical.sort(
+        Tags::Select.new(object, method, self, country_options + SortAlphabetical.sort(
             translated_countries(COUNTRIES).zip(COUNTRIES.values)), options, html_options).render
       end
 
